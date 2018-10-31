@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="carouselWrapper">
+        </div>
+    </div>
+</body>
+<script>
+var carouselData = [
+    {
+        image:"assets/images/1.jpg",
+        link:"https://1.com",
+    },
+    {
+        image:"assets/images/2.jpg",
+        link:"https://2.com",
+    },
+    {
+        image:"assets/images/3.jpg",
+        link:"https://3.com",
+    },
+    {
+        image:"assets/images/4.jpg",
+        link:"https://4.com",
+    },
+    {
+        image:"assets/images/5.jpg",
+        link:"https://5.com",
+    },
+];
+var newCarousel = new Carousel('carouselWrapper');
+newCarousel.initCarousel();
+newCarousel.initData(carouselData);
+</script>
+</html>

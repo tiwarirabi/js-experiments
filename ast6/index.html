@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Car Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/Header.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/Lane.js"></script>
+    <script src="js/Vehicle.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/CarGame.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        body{background-color:green;}
+        div{overflow:hidden;}
+    </style>
+</head>
+<body>
+    <div id="wrapper"></div>
+
+    <script>
+        var game = new CarGame();
+        game.init(document.getElementById('wrapper'));
+    </script>
+</body>
+</html>
